@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/templates/template-login.xhtml">
+<ui:define name="body">
+<h:body onload="PF('dlg').show()"> 
+<!-- <h:body > -->
+	<h:form id="form">
+		<h1>Testing...</h1>
+	
+	    <p:growl id="growl" showDetail="true" life="3000" />  
+	  
+ 	    <p:dialog id="dialog" header="Login" widgetVar="dlg" modal="false" resizable="false">   
+	  
+	        <h:panelGrid columns="2" cellpadding="5">  
+	            <h:outputLabel for="username" value="Username:" />  
+	            <p:inputText value="#{loginMB.login}"   
+	                    id="username" required="true" label="username" />  
+	              
+	            <h:outputLabel for="password" value="Password:" />  
+	            <h:inputSecret value="#{loginMB.password}"   
+	                    id="password" required="true" label="password" />  
+	              
+	            <f:facet name="footer">  
+	                <p:commandButton id="loginButton" value="Login" update="growl"  type="submit"
+	                    actionListener="#{loginMB.login}"   
+	                    oncomplete="handleLoginRequest(xhr, status, args)"/>  
+	            </f:facet>  
+	        </h:panelGrid>  
+	    </p:dialog>      
+	</h:form>
+	<script type="text/javascript">  
+    function handleLoginRequest(xhr, status, args) {  
+        if(args.validationFailed || !args.loggedIn) {  
+            PF('dlg').jq.effect("shake", { times:5 }, 100);  
+        }   
+        else {  
+            PF('dlg').hide();  
+            $('#loginLink').fadeOut();  
+        }  
+    }  
+</script>  
+</h:body>
+	
+</ui:define>
+
+</ui:composition>
+
+</html>

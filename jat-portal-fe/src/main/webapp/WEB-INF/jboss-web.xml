@@ -1,0 +1,4 @@
+<jboss-web>
+  	<context-root>portal</context-root>
+<!--   	<security-domain>java:/jaas/jasJATLogin</security-domain>  	 -->
+</jboss-web>
