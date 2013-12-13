@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>Simplexpx – Responsive Multipurpose - Ecommerce Bootstrap Template</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+<style type="text/css" media="screen">
+p, table, hr, .box { margin-bottom: 25px; }
+.box p { margin-bottom: 10px; }
+pre { background-color: #FFC }
+h4 { font-size: 16px; font-weight: bold }
+</style>
+</head>
+
+<body>
+<div class="container">
+  <h3 class="center alt">Simplexpx –  Responsive Multipurpose Bootstrap 3 Html5 Template <br>
+    Documentation by &ldquo;
+    pxcreatetemplate :  v1.0</h3>
+  <hr>
+  <h1 class="center">Simplexpx – Responsive Multipurpose Bootstrap 3 Html5 Template</h1>
+  <div class="borderTop">
+    <div class="span-6 colborder info prepend-1">
+      <p class="prepend-top"> <strong> Created: October/30/2013<br>
+        By: pxcreatetemplate<br>
+        Email: <a href="mailto:pxcreate@yahoo.com">pxcreate@yahoo.com</a> </strong> </p>
+    </div>
+    <!-- end div .span-6 -->
+    
+    <div class="span-12 last">
+      <p class="prepend-top append-0">Thank you for purchasing our template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://twitter.net/user/pxcreatetemplate">here</a> Thanks so much!</p>
+      <p> <strong>You will get diffrent 12 folders named color1, color2... for 12 color variation .</strong> </p>
+    </div>
+  </div>
+  <!-- end div .borderTop -->
+  
+  <hr>
+  <h2 id="toc" class="alt">Table of Contents</h2>
+  <ol class="alpha">
+    <li><a href="#othersetting">Settings - like tweets, facebook, contact us </a> </li>
+    <li><a href="#htmlStructure">HTML Structure</a> </li>
+    <li><a href="#cssFiles">CSS Files and Structure</a> </li>
+    <li><a href="#javacustom">JavaScript</a> </li>
+    <li><a href="#credits">Sources and Credits</a> </li>
+  </ol>
+  <hr>
+  </p>
+  <h3 id="othersetting"><strong>A)Settings</strong> - <a href="#toc">top</a> </h3>
+  <h4>Set up Latest Tweets</h4>
+<strong>  <P> If you don't want to set up twitter please comment twitter function from custom.js</P><br>
+</strong>  <p> open file
+  <pre><code> js/custom.js  </code></pre>
+  Find
+  <pre><code>username: "pxcreate",</code></pre>
+  replace it with your username like,
+  <pre><code>username: "xyz",</code></pre>
+  Find
+  <pre><code>// modpath: 'catalog/view/theme/shopsimple/twitter/',</code></pre>
+  replace it with Below (or just remove comment)
+  <pre><code>modpath: 'catalog/view/theme/shopsimple/twitter/',</code></pre>
+  </p>
+  & for  Twitter Feed API 1.1 support and OAuth Token Authentication integration
+  <p> open file
+  <pre><code> twitter/index.php  </code></pre>
+  Find
+  <pre><code>// Your Twitter App Consumer Key
+	private $consumer_key = 'YOUR_CONSUMER_KEY';</code>
+
+	<code>// Your Twitter App Consumer Secret
+	private $consumer_secret = 'YOUR_CONSUMER_SECRET';</code>
+
+	<code>// Your Twitter App Access Token
+	private $user_token = 'YOUR_ACCESS_TOKEN';</code>
+
+	<code>// Your Twitter App Access Token Secret
+	private $user_secret = 'YOUR_ACCESS_TOKEN_SECRET';</code></pre>
+  replace it with yours.
+  
+  You can get all detials from here, <a href="https://dev.twitter.com/apps">https://dev.twitter.com/apps</a> Login with your twitter ID & create Application. <br>
+  You need to have a twitter App for your usage in order to obtain OAuth credentials.
+  </p>
+  </br>
+  </br>
+  <h4>Set up Facebook likebox</h4>
+  <p> Open html page [blog pages]
+    Find
+  <pre><code>http://www.facebook.com/twitter</code></pre>
+  relace it with your username <br>
+  <pre><code> Ex.. http://www.facebook.com/twitter</code></pre>
+  </p>
+  <h4>Set up Flicker, Pintrerest, dribble etc.</h4>
+  <p> Open Custom.js
+    Find
+  <pre><code>$('.flickr-feed').socialstream({</code></pre>
+  Here you can set your social username <br>
+  <P>same thing for pinterest & other social feed</P>
+   <pre><code>$('.pinterest-feed').socialstream({</code></pre>
+  
+  </p>
+  <h4>Set up Contact email ID</h4>
+  <p> open email.php file <br>
+    Find
+  <pre><code> $to = "";</code></pre>
+  add your email id Ex : <br>
+  <pre><code>  $to ="test@test.com";//your email id</code></pre>
+  </p>
+  <h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a> </h3>
+  <p>This theme is a Responisve layout  for tablet & mobile device base on html5 structure & Twitter Bootstrap. The sidebar's content is within a div with an tag
+  <aside>
+  "
+  <aside>
+  <h3>For More customization in layout with bootstrap structure you can read doc here<br>
+    <a href="http://getbootstrap.com/">http://getbootstrap.com/</a> </h3>
+  ". The general template structure is the same throughout the template. Here is the general structure.
+  </p>
+  <img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+  <hr>
+  <h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a> </h3>
+  <p>I'm using two CSS files in this theme. The first style.css [main css] file. The second one bootstrap.css is default bootstrap.css. The third one bootstrap-responsive.css is to make site responsive, which is also default with twitter bootstrap</p>
+  <pre>	
+      
+/* ------------ Header ------------ */
+      
+      some code
+            
+/* ------------ Main Menu ------------ */
+
+	
+    some code
+    
+/* ------------ Blog ------------ */
+    
+    some code   
+    
+/* ------------ Portfolio ------------ */
+    
+    some code
+
+/* ------------  Our Client ------------ */
+    
+    some code
+	
+ etc. 
+</pre>
+  <hr>
+  <h3 id="javacustom"><strong>C) JavaScript</strong> - <a href="#toc">top</a> </h3>
+  <p>This theme include below files.</p>
+  <ol>
+    <li>Revolution Slider all js, color variation & Documentation</li>
+    <li>html5.js - should be on top</li>
+    <li>respond.min.js -For css Media query in IE8</li>    
+    <li>zoomsl-3.0.min.js - For Zoom plugin </li>
+    <li>socialstream.jquery.js - For Social Feed </li>
+    <li>jquery.flexslider.js  -For Responsive Slider & carousal  </li>
+    <li>jquery.prettyPhoto.js  -For Popup Plugin </li>    
+    <li>carouFredSel-6.1.0-packed.js  -For Responsive Slider & carousal </li>
+    <li>jquery.mousewheel.min.js  - To make slide & carousal work with mousewheel </li>
+    <li>jquery.jquery.touchSwipe.min.js  - To make slide & carousal work with TouchSwipe </li>
+    <li>jquery.validate.js - For Form Validation </li>
+    <li>jquery.gmap.js -  for google map </li>
+    <li>jquery.isotope.min.js -  for Animated Portfolio</li>
+    <li>jquery.countdown.js -  for Coming Soon page Contdown</li>
+    <li>custom.js - all setting can be made from here</li>
+  </ol>
+  <hr>
+  <h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a> </h3>
+  <p>Credits
+  <ul>
+        <li>Icons from <a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>
+    <li>
+    <li>photos From
+      http://photodune.net/
+    <li>
+    <li>Fonts icon <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> </li>
+  </ul>
+  <hr>
+  <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on twitter, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+  <p class="append-bottom alt large"><strong>pxcreatetemplate</strong></p>
+  <p><a href="#toc">Go To Table of Contents</a> </p>
+  <p>If you like theme please don't forget to rate us! :)</p>
+  <hr class="space">
+</div>
+<!-- end div .container -->
+</body>
+</html>
