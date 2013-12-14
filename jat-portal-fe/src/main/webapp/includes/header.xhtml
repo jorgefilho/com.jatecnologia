@@ -4,86 +4,187 @@
   xmlns:ui="http://java.sun.com/jsf/facelets"
   xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
   xmlns:p="http://primefaces.org/ui">
-<div id="header" style="FONT-SIZE: xx-small;">
-    	<!-- Start navigation area -->
-        <div id="navigation">
-
-        	<div id="navigation_wrap">
-
-                <!-- Start contact info area -->
-                <div id="contactinfo"><strong>#{msg['header.email']}</strong> #{msg['header.email.info']}  |  <strong>#{msg['header.phone']}</strong> #{msg['header.phone.info']}</div>
-                <!-- End contact info area -->
-                <!-- Start navigation -->
-                <div id="navi">
-                
+  
+ <!-- Header Start -->
+<header>
+  <div class="headerdetails">
+    <div class="container"> <a class="logo pull-left" href="index.html"><img title="Simplepx" alt="Simplepx" src="img/logo.png"/></a> 
+      <!--Social -->
+      <div class="socialtop pull-right">
+        <div class="call"><i class="icon-phone"></i> Call Us : <span class="orange">+ 00 123 456 7890 </span></div>
+        <ul class="pull-right">
+          <li><a class="tooltip-test"  data-original-title="Facebook"  ><i class="icon-facebook"></i></a></li>
+          <li><a class="tooltip-test"  data-original-title="Twitter"  ><i class="icon-twitter"></i></a></li>
+          <li><a class="tooltip-test"  data-original-title="LinkedIn"  ><i class="icon-linkedin"></i></a></li>
+          <li><a class="tooltip-test"  data-original-title="Google Plus"  ><i class="icon-google-plus"></i></a></li>
+          <li><a class="tooltip-test"  data-original-title="Pinterest"  ><i class="icon-pinterest"></i></a></li>
+          <li><a class="tooltip-test"  data-original-title="Dribbble"  ><i class="icon-dribbble"></i></a></li>
+          <li><a class="tooltip-test"  data-original-title="Flickr"  ><i class="icon-flickr"></i></a></li>
+          <li><a class="tooltip-test"  data-original-title="Skype"  ><i class="icon-skype"></i></a></li>
+        </ul>
+      </div>
+      <!--Top Search -->
+      <div class="pull-right topsearch">
+        <form class="form-inline">
+          <input type="search" placeholder="Search Here" class="form-control"/>
+          <button data-original-title="Search" class="btn btn-orange btn-small tooltip-test"> <i class="icon-search icon-white"></i> </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="mainmenu"  class="mb40"> 
+    <!-- Navigation -->
+    <nav class="subnav">
+      <div class="container menurelative">
+        <ul class="nav-pills mainmenucontain container">
+          <li> <a class="active home" href="index.html"><i class="icon-home icon-white font18"></i> <span> Home</span></a>
+            <div>
+              <h4 class="menutitle">Home Page Styles</h4>
+              <div class="mega">
+                <ul>
+                  <li><a href="index2.html">Home Style 2</a></li>
+                  <li><a href="index3.html">Home Style 3</a> </li>
+                  <li><a href="index4.html">Home Style 4</a> </li>
+                  <li><a href="index5.html">Home Style 5</a> </li>
+                </ul>
+                <ul>
+                  <li><a href="index6.html">Home Style 6</a> </li>
+                  <li><a href="index7.html">Home Style 7</a> </li>
+                  <li><a href="index8.html">Home Style 8</a> </li>
+                  <li><a href="index9.html">Home Style 9</a> </li>
+                </ul>
+                <ul>
+                  <li><a href="index10.html">Home Style 10</a> </li>
+                  <li><a href="index11.html">Home Style 11</a> </li>
+                  <li><a href="index12.html">Home Style 12</a> </li>
+                  <li><a href="index.html">Home Style 1</a> </li>
+                </ul>
+              </div>
+              <h4 class="menutitle">Header Styles</h4>
+              <div class="mega mt10">
+                <ul>
+                  <li><a href="header1.html">Header Style 1</a> </li>
+                  <li><a href="header2.html">Header Style 2</a> </li>
+                  <li><a href="header3.html">Header Style 3</a> </li>
+                </ul>
+                <ul>
+                  <li><a href="header4.html">Header Style 4</a> </li>
+                  <li><a href="header5.html">Header Style 5</a> </li>
+                  <li><a href="header6.html">Header Style 6</a> </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a><i class="icon-shopping-cart icon-white font18"></i> Ecommerce pages</a>
+            <div>
+              <ul>
+                <li><a>Home pages layouts</a>
+                  <div>
                     <ul>
-                    
-                        <li><a href="home.htm" title="Response Home">Home</a></li>
-                        <li><a href="#" title="Response Features">Features</a>
-                        	<ul>
-                            	<li><a href="buttons-buttonshapes.html" title="Response Buttons">Buttons</a></li>
-                                <li><a href="columns.html" title="Response Columns">Columns</a></li>
-                                <li><a href="icons-and-lists.html" title="Response Icons &amp; Lists">Icons &amp; Lists</a></li>
-                                <li><a href="notifications.html" title="Response Notifications">Notifications</a></li>
-                                <li><a href="tabs-and-toggles.html" title="Response Tabs &amp; Toggles">Tabs &amp; Toggles</a></li>
-                                <li><a href="#" title="Response Other Dropdown">Other</a>
-                                	<ul>
-                                    	<li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
-                                        <li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
-                                        <li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
-                                        <li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html" title="Response's Blog">Blog</a>
-                        	<ul>
-                            	<li><a href="blog-left.html" title="Left Column Blog">Left Column Blog</a></li>
-                                <li><a href="blog.html" title="Right Column Blog">Right Column Blog</a></li>
-                                <li><a href="blog-post.html" title="Blog Post">Post</a>
-                                	<ul>
-                                        <li><a href="left-blog-post.html" title="Left Column Blog Post">Left Column Post</a></li>
-                                    <li><a href="blog-post.html" title="Right Column Blog Post">Right Column Post</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="portfolio.html" title="Respons'se Portfolio">Portfolio</a>
-                        	<ul>
-                            	<li><a href="portfolio-2-column.html" title="2 Column Filtered Portfolio">2 Columns</a></li>
-                                <li><a href="portfolio-3-column.html" title="3 Column Filtered Portfolio">3 Columns</a></li>
-                                <li><a href="portfolio.html" title="4 Column Filtered Portfolio">4 Columns</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact-us" title="Contact Response">Contact Us</a></li>
-                    
+                      <li><a href="ecommerce1.html">Home Layout 1</a></li>
+                      <li><a href="ecommerce2.html">Home Layout 2</a></li>
+                      <li><a href="ecommerce3.html">Home Layout 3</a> </li>
+                      <li><a href="ecommerce4.html">Home Layout 4</a> </li>
+                      <li><a href="ecommerce5.html">Home Layout 5</a> </li>
+                      <li><a href="ecommerce6.html">Home Layout 6</a> </li>
                     </ul>
-                
-                </div>
-                <!-- End navigation -->
-                
-			</div>
-        
-        </div>
-        <!-- End navigation area -->
-        <div class="clear"></div>
-        <!-- Start Social & Logo area -->
-        <div id="header_small">
-        	<!-- Start Social area -->
-        	<div class="social">            	     
-				<ui:include page="social.xhtml"/>
+                  </div>
+                </li>
+                <li><a>Proudct pages layouts</a>
+                  <div>
+                    <ul>
+                      <li><a href="product.html">Product style 1</a> </li>
+                      <li><a href="product2.html">Product style 2</a> </li>
+                      <li><a href="productgrid.html">Product Grid</a> </li>
+                      <li><a href="productgrid2.html">Product Grid 2 <span class="label label-success">Sale</span> </a> </li>
+                      <li><a href="productlist.html">Product List </a> </li>
+                      <li><a href="productlist2.html">Product List 2<span class="label label-warning">(25)</span> </a> </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="shopping-cart.html">Shopping Cart</a> </li>
+                <li><a href="checkout.html">Checkout</a> </li>
+                <li><a href="compare.html">Compare</a> </li>
+                <li><a href="myaccount.html">My Account</a> </li>
+                <li><a href="login.html">Login</a> </li>
+                <li><a href="register.html">Register</a> </li>
+                <li><a href="wishlist.html">Wishlist</a> </li>
+                <li><a href="brand.html">Brand</a> </li>
+                <li><a href="purchase-gift.html">Purchase Gift</a> </li>
+              </ul>
             </div>
-            <!-- End Socialarea -->
-            
-            <!-- Start Logo area -->
-            <div id="logo">
-<!--                <a href="/themes/response/" title="Response">Response</a>  -->
-               <img src="//assets.jatecnologia.com/img/logo/jatecnologia-175-99.jpg" alt=""/> 
+          </li>
+          <li><a><i class="icon-comments-alt icon-white font18"></i> Blog</a>
+            <div>
+              <ul>
+                <li><a href="blog.html">Blog 3 Column</a> </li>
+                <li><a href="blog2.html">Blog 2 Column</a> </li>
+                <li><a href="blog3.html">Blog 1 Column</a> </li>
+                <li><a href="bloggrid.html">Blog Grid View-1</a> </li>
+                <li><a href="bloggrid2.html">Blog Grid View-2</a> </li>
+                <li><a href="bloglist.html">Blog List View</a> </li>
+              </ul>
             </div>
-            <!-- End Logo area -->
-        
-        </div>
-        <!-- End Social & Logo area -->
-
-</div>
+          </li>
+          <li><a><i class="icon-dropbox icon-white font18"></i> Portfolio</a>
+            <div>
+              <ul>
+                <li><a href="portfoliolist-2column.html">Portfolio List - 2 Column</a> </li>
+                <li><a href="portfoliolist-3column.html">Portfolio List - 3 Column</a> </li>
+                <li><a href="portfoliolist-4column.html">Portfolio List - 4 Column</a> </li>
+                <li><a href="portfoliolist-5column.html">Portfolio List - 5 Column</a> </li>
+                <li><a href="portfolio.html">Portfolio Detail page</a> </li>
+                <li><a href="portfolio2.html">Portfolio Detail page 2</a> </li>
+              </ul>
+            </div>
+          </li>
+          <li> <a><i class="icon-ok icon-white font18"></i> Other Pages</a>
+            <div>
+              <ul>
+                <li><a href="aboutus.html">About Us</a> </li>
+                <li><a href="faq.html">Faq</a> </li>
+                <li><a href="news.html">News</a> </li>
+                <li><a href="newslist.html">News List</a> </li>
+                <li><a href="pricing.html">Pricing</a> </li>
+                <li><a href="ourteam.html">Our Team</a> </li>
+                <li><a href="testimonial.html">Testimonials</a> </li>
+                <li><a href="services.html">Services </a> </li>
+                <li><a href="underconstruction.html">Under Construction </a> </li>
+                <li><a href="comingsoon.html">Coming Soon </a> </li>
+                <li><a href="page-404.html">Page 404</a> </li>
+                <li><a href="page-500.html">Page 500</a> </li>
+              </ul>
+            </div>
+          </li>
+          <li> <a><i class="icon-magic icon-white font18"></i> Features</a>
+            <div>
+              <ul>
+                <li><a href="buttons.html">buttons</a> </li>
+                <li><a href="form.html">Form</a> </li>
+                <li><a href="javascripts.html">Javascripts</a> </li>
+                <li><a href="typography.html">Typography</a> </li>
+                <li><a href="icons.html">Icons</a> </li>
+              </ul>
+            </div>
+          </li>
+          <li><a><i class="icon-phone icon-white font18"></i> Contact Us</a>
+            <div>
+              <ul>
+                <li><a href="contact.html">Contact Us 1</a> </li>
+                <li><a href="contact1.html">Contact Us 2</a> </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a  class="quickcontact"><i class="icon-phone"></i> Buy Now</a> </div>
+    </nav>
+  </div>
+</header>
+<!-- Header End -->
+  
+  
+  
+  
+  
+  
 </f:view>
