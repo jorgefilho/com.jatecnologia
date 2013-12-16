@@ -5,13 +5,18 @@
   xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
   xmlns:p="http://primefaces.org/ui">
   
- <!-- Header Start -->
+<!-- Header Start -->
 <header>
   <div class="headerdetails">
-    <div class="container"> <a class="logo pull-left" href="index.html"><img title="Simplepx" alt="Simplepx" src="img/logo.png"/></a> 
+    <div class="container"> 
+    <h:link onclick="home"> 
+    	<h:graphicImage onclick="home" styleClass="logo pull-left" url="img/logo.png"></h:graphicImage>
+    </h:link> 
+    
+    <a class="logo pull-left" href="/home"><img title="1" alt="Simplepx" src="img/logo.png"/></a> 
       <!--Social -->
       <div class="socialtop pull-right">
-        <div class="call"><i class="icon-phone"></i> Call Us : <span class="orange">+ 00 123 456 7890 </span></div>
+        <div class="call"><i class="icon-phone"></i> #{msg['contact.title']}: <span class="orange">#{msg['contact.fone.info']} </span></div>
         <ul class="pull-right">
           <li><a class="tooltip-test"  data-original-title="Facebook"  ><i class="icon-facebook"></i></a></li>
           <li><a class="tooltip-test"  data-original-title="Twitter"  ><i class="icon-twitter"></i></a></li>
@@ -167,14 +172,7 @@
               </ul>
             </div>
           </li>
-          <li><a><i class="icon-phone icon-white font18"></i> Contact Us</a>
-            <div>
-              <ul>
-                <li><a href="contact.html">Contact Us 1</a> </li>
-                <li><a href="contact1.html">Contact Us 2</a> </li>
-              </ul>
-            </div>
-          </li>
+          <li><a href="/contact"><i class="icon-phone icon-white font18"></i> #{msg['contact.title']}</a></li>
         </ul>
         <a  class="quickcontact"><i class="icon-phone"></i> Buy Now</a> </div>
     </nav>

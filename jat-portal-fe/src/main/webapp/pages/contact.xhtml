@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:c="http://java.sun.com/jsf/core"
+      xmlns:f="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<f:composition template="../templates/default.xhtml">
+<f:define name="body">
+	<div class="container"> 
+    <!--  breadcrumb -->
+    <ul class="breadcrumb">
+      <li> <a >Home</a> </li>
+      <li class="active"> Contact Us</li>
+    </ul>
+    <!-- Main Title-->
+    <div class="titles">
+      <div class="pull-left">
+        <h1 class="headinglefttitle"> Contact Us</h1>
+        <div class="headingsubtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat</div>
+      </div>
+      <i class="icon-map-marker"></i> </div>        
+        <div class="row mt40">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <!--Map-->
+        <section id="contactmap" class="map">
+          <p>This will be replaced with the Google Map.</p>
+        </section>
+        </div>
+        <!--Contact Address-->                  
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <aside>
+              <div class="sidewidt">
+                <h2 class="heading2"><span> <i class="icon-envelope"></i> Contact Info</span></h2>
+                <p> Lorem Ipsum is simply<br/>
+                  Lorem Ipsum is simply<br/>
+                  Lorem Ipsum is simply<br/></p>
+                 <div class="contactlinks">
+                  <i class="icon-phone"></i> <strong>Phone</strong>: (012) 333-7890<br/>
+                  <i class="icon-phone"></i> <strong>Fax</strong>: (123) 444-7890<br/>
+                  <i class="icon-envelope"></i> <strong>Email</strong>: test@contactus.com<br/>
+                  <i class="icon-globe"></i> <strong>Web</strong>: yourcompanyname.com<br/>
+                  </div>
+                
+              </div>
+            </aside>
+          </div>
+         <!--Contact Form-->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <form class="form-horizontal contactform"  method="post">
+              <fieldset>
+                <div class="control-group">
+                  <label for="name" class="control-label">Name <span class="required">*</span></label>
+                  <div class="controls">
+                    <input type="text"  class="required" id="name" value="" name="name"/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label for="email" class="control-label">Email <span class="required">*</span></label>
+                  <div class="controls">
+                    <input type="email"  class="required email" id="email" value="" name="email"/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label for="url" class="control-label">Url</label>
+                  <div class="controls">
+                    <input type="url" id="url" value="" name="url"/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label for="message" class="control-label">Message</label>
+                  <div class="controls">
+                    <textarea  class="required"  id="message" name="messagee"></textarea>
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <input class="btn btn-orange" type="submit" value="Submit" id="submit_id"/>
+                  <input class="btn" type="reset" value="Reset"/>
+                </div>
+              </fieldset>
+            </form>
+          </div>     
+     </div>
+  </div>  
+ 
+</f:define>
+</f:composition>
+</html>
